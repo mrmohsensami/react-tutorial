@@ -177,3 +177,21 @@ const titles = books.map((book) => ({
     title: book.title,
 }));
 titles;
+
+// Filter
+const longBooks = books
+    // .filter((book) => book.pages > 1000)
+    // .filter((book) => book.hasMovieAdaptation)
+    .filter((book) => book.genres.includes('adventure'));
+longBooks;
+
+// Reduce
+const totalPages = books.reduce((total, book) => total + book.pages, 0);
+totalPages;
+
+// Sort
+const x = [3, 7, 1, 9, 6];
+const sorted = x.slice().sort((a, b) => a - b);
+sorted;
+const sortedBooksByPages = books.slice().sort((a, b) => b.pages - a.pages);
+sortedBooksByPages;
