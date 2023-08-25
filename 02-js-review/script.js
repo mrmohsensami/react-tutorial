@@ -213,3 +213,16 @@ booksAfterRemoving;
 // 3) update book in array
 const booksAfterUpdating = booksAfterRemoving.map((book) => (book.id === 1 ? { ...book, pages: 1210 } : book));
 booksAfterUpdating;
+
+// Promise method
+fetch('https://jsonplaceholder.typicode.com/todos')
+    .then((res) => res.json())
+    .then((data) => console.log(data));
+
+// AsyncAwait
+async function getTodos() {
+    const response = await fetch('https://jsonplaceholder.typicode.com/todos');
+    const data = await response.json();
+    console.log(data);
+}
+getTodos();
