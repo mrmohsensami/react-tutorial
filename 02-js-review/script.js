@@ -149,3 +149,7 @@ updatedBook;
 //Template Literals
 const summary = `${title} by ${author}`;
 summary;
+
+// Ternary Operators
+const pagesRange = pages > 1000 ? 'over a thousand' : summary;
+pagesRange;
