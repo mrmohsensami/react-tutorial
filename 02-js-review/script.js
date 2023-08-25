@@ -145,3 +145,7 @@ const newGenres = [...genres, 'epic fantasy'];
 newGenres;
 const updatedBook = { ...book, publicationDate: '2021-12-19', pages: 1000 };
 updatedBook;
+
+//Template Literals
+const summary = `${title} by ${author}`;
+summary;
