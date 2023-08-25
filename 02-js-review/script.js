@@ -157,3 +157,15 @@ pagesRange;
 // Arrow Functions
 const getYear = (str) => str.split('-')[0];
 console.log(getYear(publicationDate));
+
+// shortCircuiting
+console.log(true && 'Hi');
+console.log(0 && 'Hi');
+// falsey = 0 , '', null, undefined
+console.log(true || 'Hi');
+console.log(false || 'Hi');
+countWrong = book.reviews.librarything.reviewsCount || 'no data';
+countWrong;
+// nullish coalescing
+countWrong = book.reviews.librarything.reviewsCount ?? 'no data'; // only return null or undefined
+countWrong;
