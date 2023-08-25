@@ -169,3 +169,11 @@ countWrong;
 // nullish coalescing
 countWrong = book.reviews.librarything.reviewsCount ?? 'no data'; // only return null or undefined
 countWrong;
+
+// Map
+const books = getBooks();
+const titles = books.map((book) => ({
+    id: book.id,
+    title: book.title,
+}));
+titles;
